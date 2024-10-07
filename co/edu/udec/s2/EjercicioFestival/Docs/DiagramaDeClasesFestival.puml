@@ -28,7 +28,7 @@ class Escenario{
 
 class Espectador{
     - String nombre;
-    - String edad;
+    - int edad;
     - Entrada entrada;
 }
 
