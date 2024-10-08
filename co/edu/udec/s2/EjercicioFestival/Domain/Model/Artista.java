@@ -25,5 +25,19 @@ public class Artista {
         System.out.println("La nacionalidad del artista es: "+nacionalidad);
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getGeneromusical() {
+        return generomusical;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+
+
 }
 

@@ -24,7 +24,7 @@ public class Festival {
     public void datosFestival(){
         System.out.println("El nombre del festival es: "+nombre);
         System.out.println("Ubicacion: "+ubicacion);
-        System.out.println("Fecha: "+fecha);
+        System.out.println("Fecha: " + fecha.toString());
     }
 
 }

@@ -5,7 +5,6 @@ public class Espectador {
     // PROPIEDADES
     private String nombre;
     private int edad;
-    private Entrada entrada;
 
     // CONSTRUCTOR
     public Espectador(){
@@ -13,17 +12,24 @@ public class Espectador {
     }
 
     // CONSTRUCTORES CON PARAMETROS
-    public Espectador(String nombre, int edad, Entrada entrada){
+    public Espectador(String nombre, int edad){
         this.nombre = nombre;
         this.edad = edad;
-        this.entrada = entrada;
     }
 
     public void datosEspectador(){
         System.out.println("Nombre del espectador: "+nombre);
         System.out.println("Edad del espectador: "+edad);
-        System.out.println("Entrada del espectador: "+entrada);
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
 
 }
 

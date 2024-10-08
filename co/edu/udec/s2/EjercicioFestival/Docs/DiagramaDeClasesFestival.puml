@@ -15,35 +15,23 @@ class Artista{
 class Concierto{
     - String nombre;
     - int duracion;
-    - Escenario escenario;
-    - Artista artista;
 }
 
 class Escenario{
     - String nombre;
     - int capacidad;
-    - Artista artista;
     - List<Espectador> espectadores;
 }
 
 class Espectador{
     - String nombre;
     - int edad;
-    - Entrada entrada;
 }
 
-Class Entrada{
-    - int id;
-    - String tipo;
-    - Date fecha;
-    - Espectador espectador;
-    - Concierto concierto;
-}
 
 ' RELACIONES
 Festival "1" -- "*" Concierto : Albergar
 Espectador "*" -- "1" Festival : Asistir
-Espectador "*" -- "1" Entrada : Tener
 Concierto "1" -- "*" Espectador : Soportar
 Concierto "1" -- "1" Escenario : Asignar
 Artista "1" -- "1" Concierto : Cantar 
